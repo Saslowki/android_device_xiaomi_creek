@@ -3,10 +3,7 @@ ro.launcher.blur.appLaunch=0
 
 # Audio
 af.fast_track_multiplier=1
-# Temporary bring-up routing workaround: media on deep-buffer/offload is
-# silent, while the primary low-latency PCM path is confirmed audible.
-audio.deep_buffer.media=false
-audio.offload.disable=1
+audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
 audio.sys.mute.latency.factor=2
 audio.sys.offload.pstimeout.secs=3
@@ -30,6 +27,7 @@ vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
 
 # Netflix
+ro.netflix.bsp_rev=Q6115-31409-1
 ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
 ro.netflix.signup=1
 
@@ -66,10 +64,12 @@ bluetooth.profile.vcp.controller.enabled=false
 persist.vendor.bt.a2dp.samplerate=true
 
 # Display
+debug.sf.enable_gl_backpressure=0
 persist.vendor.adapt.sampler=true
 
 # Media
 media.stagefright.audio.deep=false
+persist.mm.enable.prefetch=true
 
 # Remote Provisioning
 remote_provisioning.enable_rkpd=true
@@ -81,8 +81,9 @@ ro.vendor.radio.fastdormancy=true
 ro.vendor.radio.features_common=3
 
 # lmkd
-# psi_complete_stall_ms was 70 here (AOSP stock default is 700) -
-# 10x too sensitive, likely over-triggering kills on ordinary
-# transient memory spikes. Reverted to documented AOSP default.
-ro.lmk.use_psi=1
-ro.lmk.psi_complete_stall_ms=700
+ro.lmk.psi_complete_stall_ms=70
+
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3
+dalvik.vm.background-dex2oat-cpu-set=0,1,2,3
+dalvik.vm.dex2oat-threads=4
