@@ -274,6 +274,12 @@
             Resources="0x4303C000, 768000, 0x40800000, 2208, 0x40800100, 1516,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
                        0x40C78000, 0, 0x40C7C000, 0, 0x42804000, 2" />
+        
+        <Config
+            Id="0x00001080" Type="1" Enable="true" Target="khaje" Fps="144"
+            Resources="0x4303C000, 768000, 0x40800000, 2600, 0x40800100, 1900,
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0, 0x42804000, 2" />
 
     <!--Horizontal Scroll boost-->
         <!-- CPUBW_MIN_FREQ resource opcode, value for bengal/scuba -->
@@ -322,6 +328,12 @@
         <Config
             Id="0x00001080" Type="2" Enable="true" Target="khaje" Fps="120"
             Resources="0x4303C000, 768000, 0x40800000, 2208, 0x40800100, 1516,
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0" />
+
+        <Config
+            Id="0x00001080" Type="2" Enable="true" Target="khaje" Fps="144"
+            Resources="0x4303C000, 768000, 0x40800000, 2600, 0x40800100, 1900,
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
                        0x40C78000, 0, 0x40C7C000, 0" />
 
@@ -378,6 +390,12 @@
                        0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
                        0x40C78000, 0, 0x40C7C000, 0, 0x42804000, 2" />
 
+         <Config
+            Id="0x00001080" Type="4" Enable="true" Timeout="115" Target="khaje" Fps="144"
+            Resources="0x4303C000, 768000, 0x40800000, 2600, 0x40800100, 1900,
+                       0x40C00000, 2, 0x40C74000, 0xF0, 0x40408000, 0x27, 0x41000000, 3,
+                       0x40C78000, 0, 0x40C7C000, 0, 0x42804000, 2" />
+
     <!-- Silky Scroll boost -->
         <!-- Type 5 Light Scrolls : Horizontal and Verical -->
         <!-- SCHED_BOOST resource opcode, value-->
@@ -396,6 +414,10 @@
         <Config
             Id="0x00001080" Type="5" Enable="true" Fps="120" Target="khaje"
             Resources="0x40C00000, 2, 0x40800000, 1900, 0x40C78000, 0, 0x40C7C000, 0" />
+
+         <Config
+            Id="0x00001080" Type="5" Enable="true" Fps="144" Target="khaje"
+            Resources="0x40C00000, 2, 0x40800000, 2200, 0x40C78000, 0, 0x40C7C000, 0" />
 
         <!-- Type 6 Medium Scrolls : Horizontal and Verical -->
         <!-- Below node is for 60FPS -->
@@ -435,6 +457,13 @@
                        0x40C78000, 0, 0x40C7C000, 0, 0x40C74000, 0xF0,
                        0x40408000, 0x27, 0x41008000, 0, 0x4303C000, 768000" />
 
+        <Config
+            Id="0x00001080" Type="6" Enable="true" Fps="144" Target="khaje"
+            Resources="0x4080C000, 0xFFF, 0x4080C100, 0xFFF, 0x40808000, 2000, 0x40808100, 1900,
+                       0x40C00000, 2, 0x41000000, 3, 0x43488000, 0xBB800,
+                       0x40C78000, 0, 0x40C7C000, 0, 0x40C74000, 0xF0,
+                       0x40408000, 0x27, 0x41008000, 0, 0x4303C000, 768000" />
+
         <!-- Type 7 Heavy Scrolls : Horizontal and Verical -->
         <!-- Below node is for 60FPS -->
         <!-- MIN_FREQ_CLUSTER_BIG_CORE_0 resource opcode, value-->
@@ -469,6 +498,13 @@
         <Config
             Id="0x00001080" Type="7" Enable="true" Fps="120" Target="khaje"
             Resources="0x4080C000, 0xFFF, 0x4080C100, 0xFFF, 0x40808000, 1766, 0x40808100, 1516,
+                       0x40C00000, 2, 0x41000000, 3, 0x43488000, 0xBB800,
+                       0x40C78000, 0, 0x40C7C000, 0, 0x40C74000, 0xF0,
+                       0x40408000, 0x27, 0x41008000, 0, 0x4303C000, 768000" />
+
+        <Config
+            Id="0x00001080" Type="7" Enable="true" Fps="144" Target="khaje"
+            Resources="0x4080C000, 0xFFF, 0x4080C100, 0xFFF, 0x40808000, 2000, 0x40808100, 1900,
                        0x40C00000, 2, 0x41000000, 3, 0x43488000, 0xBB800,
                        0x40C78000, 0, 0x40C7C000, 0, 0x40C74000, 0xF0,
                        0x40408000, 0x27, 0x41008000, 0, 0x4303C000, 768000" />
@@ -571,6 +607,11 @@
              Resources="0x40800000, 1334, 0x40800100, 1190, 0x40C00000, 2,
                         0x4303C000, 768000, 0x43488000, 768000" />
 
+        <Config
+            Id="0x00001087" Type="1" Enable="true" Timeout="0" Target="khaje" Fps="144"
+            Resources="0x40800000, 1566, 0x40800100, 1344, 0x40C00000, 2,
+                       0x4303C000, 768000, 0x43488000, 768000" />
+
     <!--Display on Resource -->
         <!-- Display on resource opcode, value -->
         <Config
@@ -664,6 +705,10 @@
         <Config
                 Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="khaje" Fps="120"
                 Resources="0x40800000, 1500, 0x42804000, 0, 0x42C20000, 1" />
+
+        <Config
+            Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="khaje" Fps="144"
+            Resources="0x40800000, 1800, 0x42804000, 0, 0x42C20000, 1" />
 
     <!--XiaoMi bluetooth boost-->
         <!-- SCHEDBOOST resource opcode, value-->
