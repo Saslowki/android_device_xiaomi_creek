@@ -42,7 +42,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 
 # Disable/enable blur support, false by default
-TARGET_ENABLE_BLUR := true
+TARGET_ENABLE_BLUR := false
 
 # Whether to ship aperture camera, false by default
 PRODUCT_NO_CAMERA := false
