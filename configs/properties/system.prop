@@ -31,9 +31,6 @@ ro.product.marketname=Redmi 15 / POCO M7
 ro.infinity.soc=Snapdragon 685 4G
 ro.infinity.camera=50MP + 8MP
 
-# Disable vsync for cpu rendered apps
-debug.cpurend.vsync=false
-
 # Fingerprint
 sys.fp.miui.token=0
 
