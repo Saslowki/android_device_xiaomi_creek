@@ -15,7 +15,7 @@
          and for the three-button navigation-bar margins. Keep it separate
          from the physical 108 px corner radius to avoid squeezing both bars.
     -->
-    <dimen name="rounded_corner_content_padding">48px</dimen>
+    <dimen name="rounded_corner_content_padding">69px</dimen>
 
     <!-- Reserve the stock amount of space for the centered camera cutout. -->
     <dimen name="status_bar_height_default">127px</dimen>
