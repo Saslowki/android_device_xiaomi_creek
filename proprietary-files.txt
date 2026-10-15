@@ -1840,7 +1840,6 @@ system_ext/lib64/libembmsmmparser_lite.so
 vendor/bin/ssr_diag
 vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
-vendor/lib64/libsubsystem_control.so
 
 # Seccomp
 vendor/etc/seccomp_policy/atfwd@2.0.policy
@@ -1857,7 +1856,6 @@ vendor/etc/seccomp_policy/imsrtp.policy
 vendor/etc/seccomp_policy/qcrilnr@2.0.policy
 vendor/etc/seccomp_policy/qms.policy
 vendor/etc/seccomp_policy/qspm.policy
-vendor/etc/seccomp_policy/qti-systemd.policy
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 
 # Sensors
