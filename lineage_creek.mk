@@ -28,8 +28,8 @@ PRODUCT_DEVICE            := creek
 PRODUCT_MANUFACTURER      := Xiaomi
 PRODUCT_BRAND             := Redmi
 PRODUCT_MODEL             := Redmi 15
-WITH_GMS := false
-WITH_MICROG := true
+WITH_GMS := true
+WITH_MICROG := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -39,10 +39,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="creek-user 16 BP2A.250605.031.A3 OS3.0.302.0.WBOMIXM release-keys" \
     BuildFingerprint=Redmi/creek_global/creek:16/BP2A.250605.031.A3/OS3.0.302.0.WBOMIXM:user/release-keys
 
-
-
 # Disable/enable blur support, false by default
-TARGET_ENABLE_BLUR := true
+TARGET_ENABLE_BLUR := false
 
 # Whether to ship aperture camera, false by default
 PRODUCT_NO_CAMERA := false
