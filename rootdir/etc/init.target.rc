@@ -38,6 +38,10 @@ on early-init
     write /proc/sys/kernel/sched_boost 1
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qti.early_init.sh
     setprop ro.soc.model ${ro.vendor.qti.soc_model}
+    # Tries to import the SKU file. If ro.boot.product.hardware.sku is empty/unset,
+    # it falls back to importing /odm/etc/o19a_build.prop (Redmi 15)
+    import /odm/etc/${ro.boot.product.hardware.sku:-o19a}_build.prop
+    import /vendor/etc/${ro.boot.product.hardware.sku:-o19a}_build.prop
 
 on init
     write /dev/stune/foreground/schedtune.sched_boost_no_override 1
@@ -114,8 +118,10 @@ on property:sys.boot_completed=1
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
     mkdir /data/vendor/mac_addr 0777 root system
+    
     # Disable audio.deep
     setprop media.stagefright.audio.deep false
+    
     #Thermal
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
@@ -139,11 +145,11 @@ on post-fs-data
     chmod 0666 /sys/class/lc_charger/reverse_quick_charge
 
     #Battery - fastcharge auth (batterysecret writes these; default 644
-#system:system on this bms node denies group-write to batterysecret's
-#root:system group, forcing a dac_override capability that LOS's
-#sepolicy correctly refuses to grant. Match the existing pd_adapter
-#grants below so the write succeeds via normal DAC, no capability
-#override needed.)
+    #system:system on this bms node denies group-write to batterysecret's
+    #root:system group, forcing a dac_override capability that LOS's
+    #sepolicy correctly refuses to grant. Match the existing pd_adapter
+    #grants below so the write succeeds via normal DAC, no capability
+    #override needed.)
     chown system system /sys/class/power_supply/bms/authentic
     chmod 0664 /sys/class/power_supply/bms/authentic
     chmod 0664 /sys/class/Charging_Adapter/pd_adapter/usbpd_verifed
@@ -161,7 +167,7 @@ on post-fs-data
 on early-boot
     start vendor.sensors
 
-on boot
+on boot    
     write /dev/cpuset/audio-app/cpus 4-7
     chown system system /sys/class/thermal/thermal_message/boost
     chmod 0664 /sys/class/thermal/thermal_message/boost
@@ -178,8 +184,6 @@ on boot
     # Xiaomi touch
     chown system system /dev/xiaomi-touch
     chmod 0660 /dev/xiaomi-touch
-    chown system system /sys/class/touch/touch_dev/fod_longpress_gesture_enabled
-    chmod 0660 /sys/class/touch/touch_dev/fod_longpress_gesture_enabled
 
     # DT2W
     chown system system /proc/tp_gesture
@@ -193,7 +197,7 @@ on boot
     setprop vendor.usb.qdss.inst.name "qdss_sw"
     setprop vendor.usb.controller 4e00000.dwc3
     chmod 777 /odm/etc/ffbmdeepsleep.sh
-
+    
 #Start mi_thermald
     start mi_thermald
 
@@ -206,7 +210,7 @@ on boot
 #in case the bms i2c device probes after post-fs-data has already run)
     chown system system /sys/class/power_supply/bms/authentic
     chmod 0664 /sys/class/power_supply/bms/authentic
-
+    
 #qvga
     chown cameraserver cameraserver /sys/class/qvga/qvga/rear_qvga
     chmod 0666 /sys/class/qvga/qvga/rear_qvga
@@ -229,10 +233,12 @@ on charger
     #Battery - fastcharge auth, offline charger-mode boot path
     chown system system /sys/class/power_supply/bms/authentic
     chmod 0664 /sys/class/power_supply/bms/authentic
+    start charger
+    class_start charger
 
 #Start mi_thermald
     start mi_thermald
-
+    
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
