@@ -23,11 +23,11 @@ $(call inherit-product, packages/apps/FastCharge/fastcharge.mk)
 -include device/xiaomi/creek/features.mk
 
 # Basic identifiers
-PRODUCT_NAME              := lineage_creek
-PRODUCT_DEVICE            := creek
-PRODUCT_MANUFACTURER      := Xiaomi
-PRODUCT_BRAND             := Redmi
-PRODUCT_MODEL             := Redmi 15 4G
+PRODUCT_NAME := lineage_creek
+PRODUCT_DEVICE := creek
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := Redmi 15 4G
 WITH_GMS := true
 WITH_MICROG := false
 
@@ -53,7 +53,9 @@ PERF_ANIM_OVERRIDE := true
 
 # CPU governor support
 PERF_GOV_SUPPORTED := false
-PERF_DEFAULT_GOV := reflex
+PERF_DEFAULT_GOV := schedutil
+
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,144
 
 # AxionFX
 TARGET_INCLUDE_AXFX := true
