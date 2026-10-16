@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Device UI geometry imported from the stock HyperOS 3
-     DevicesAndroidOverlay.apk.
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
@@ -15,7 +14,7 @@
          and for the three-button navigation-bar margins. Keep it separate
          from the physical 108 px corner radius to avoid squeezing both bars.
     -->
-    <dimen name="rounded_corner_content_padding">24px</dimen>
+    <dimen name="rounded_corner_content_padding">69px</dimen>
 
     <!-- Reserve the stock amount of space for the centered camera cutout. -->
     <dimen name="status_bar_height_default">127px</dimen>
