@@ -126,6 +126,9 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
+# Custom flags
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
@@ -286,12 +289,17 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2022-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2022-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
-# Health
+# Health & Off-Mode Charger
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery \
     android.hardware.health-V1-ndk.vendor \
-    android.hardware.health@2.1.vendor
+    android.hardware.health@2.1.vendor \
+    charger_res_images
+
+# Force off-mode charging resources
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.charger.enable_suspend=true
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -345,12 +353,17 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \
+    init.crda.sh \
     init.goodix.events.sh \
     init.kernel.post_boot-bengal-iot.sh \
     init.kernel.post_boot-bengal.sh \
     init.kernel.post_boot.sh \
+    init.mdm.sh \
     init.qcom.class_core.sh \
+    init.qcom.coex.sh \
     init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
@@ -453,13 +466,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
+    ApertureResCreek \
     CarrierConfigResCommon \
     FrameworksResCommon \
+    FrameworksResCreek \
     FrameworksResTarget \
+    SettingsProviderCreek \
+    SettingsResCreek \
     SystemUIResCommon \
+    SystemUIResCreek \
     TelecommResCommon \
     TelephonyResCommon \
     WifiResCommon \
+    WifiResCreek \
     WifiResTarget
 
 # Overlays Lineage
@@ -485,7 +504,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
+    android.hardware.power-service.qti
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
@@ -558,7 +577,12 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Sku properties
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/sku/,$(TARGET_COPY_OUT_ODM)/etc)
+    $(LOCAL_PATH)/configs/sku/o19a_build.prop:$(TARGET_COPY_OUT_ODM)/etc/o19a_build.prop \
+    $(LOCAL_PATH)/configs/sku/o19ae_build.prop:$(TARGET_COPY_OUT_ODM)/etc/o19ae_build.prop \
+    $(LOCAL_PATH)/configs/sku/o19aeerp_build.prop:$(TARGET_COPY_OUT_ODM)/etc/o19aeerp_build.prop \
+    $(LOCAL_PATH)/configs/sku/o19al_build.prop:$(TARGET_COPY_OUT_ODM)/etc/o19al_build.prop \
+    $(LOCAL_PATH)/configs/sku/o19ap_build.prop:$(TARGET_COPY_OUT_ODM)/etc/o19ap_build.prop \
+    $(LOCAL_PATH)/configs/sku/o19aperp_build.prop:$(TARGET_COPY_OUT_ODM)/etc/o19aperp_build.prop
 
 # Telephony
 PRODUCT_PACKAGES += \
