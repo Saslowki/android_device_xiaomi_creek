@@ -351,7 +351,7 @@ DEVICE_MATRIX_FILE += \
 TARGET_SCREEN_DENSITY                          := 420
 TARGET_HAS_HDR_DISPLAY                         := false
 TARGET_HAS_WIDE_COLOR_DISPLAY                  := true
-TARGET_USES_VULKAN                             := true
+TARGET_USES_VULKAN                             := false
 
 # Audio Configuration Interface
 TARGET_USES_QCOM_MM_AUDIO                      := true
