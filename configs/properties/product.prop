@@ -69,6 +69,9 @@ persist.vendor.bt.a2dp.samplerate=true
 debug.sf.enable_gl_backpressure=0
 persist.vendor.adapt.sampler=true
 
+# Graphics
+debug.hwui.renderer=skiagl
+
 # Media
 media.stagefright.audio.deep=false
 

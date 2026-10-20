@@ -34,6 +34,9 @@ persist.vendor.ims.disableQXDMLogs=1
 # Fwk-Detect
 ro.vendor.qti.va_aosp.support=1
 
+# Graphics & RenderEngine
+debug.renderengine.backend=skiaglthreaded
+
 # HWUI
 debug.sf.enable_hwc_vds=0
 debug.sf.latch_unsignaled=0
