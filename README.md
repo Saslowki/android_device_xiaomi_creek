@@ -1,11 +1,8 @@
-Device configuration for Redmi 15 4G / POCO M7 4G
+Device tree for the Redmi 15 4G (creek)
 =========================================
-
-The Redmi 15 4G / POCO M7 4G (codenamed _"creek"_) is a mid-range smartphone from Xiaomi, announced and released in August 2025.
-
 ## Device specifications
 
-| Device                  | POCO M7 4G / Redmi 15 4G                            |
+| Device                  | Redmi 15 4G                            |
 | :---------------------- | :-------------------------------------------------- |
 | SoC                     | Qualcomm SM6225 Snapdragon 685 (6 nm)               |
 | CPU                     | 4x2.8 GHz Cortex-A73 & 4x1.9 GHz Cortex-A53         |
@@ -28,6 +25,4 @@ The Redmi 15 4G / POCO M7 4G (codenamed _"creek"_) is a mid-range smartphone fro
 | Battery Protection      | Battery Health 4.0 / Smart Charging Engine 2.0      |
 
 ## Device picture
-
-<img width="850" height="850" alt="PSX_20260724_085715 jpg" src="https://github.com/user-attachments/assets/50d0dafa-3877-42b9-a05a-dbcbb15ff8ff" />
-
+<img width="730" height="569" alt="redmi 15 4g" src="https://github.com/user-attachments/assets/07f1c5c1-894b-42c2-80a2-19a5f8228f8c" />
