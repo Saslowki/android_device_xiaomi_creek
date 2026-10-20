@@ -239,7 +239,7 @@
          The AOSP default of 60 caps the render range at exactly the user minimum
          when a 60 Hz floor is selected, preventing any dynamic boost above it.
          Match the panel peak so touch/content can use the full supported range. -->
-    <integer name="config_defaultRefreshRate">144</integer>
+    <integer name="config_defaultRefreshRate">240</integer>
 
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
