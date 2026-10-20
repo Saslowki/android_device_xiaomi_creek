@@ -2,7 +2,7 @@ Device tree for the Redmi 15 4G (creek)
 =========================================
 ## Device specifications
 
-| Device                  | Redmi 15 4G                            |
+| Device                  | Redmi 15 4G                                         |
 | :---------------------- | :-------------------------------------------------- |
 | SoC                     | Qualcomm SM6225 Snapdragon 685 (6 nm)               |
 | CPU                     | 4x2.8 GHz Cortex-A73 & 4x1.9 GHz Cortex-A53         |
