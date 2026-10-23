@@ -66,7 +66,7 @@ bluetooth.profile.vcp.controller.enabled=false
 persist.vendor.bt.a2dp.samplerate=true
 
 # Display
-debug.sf.enable_gl_backpressure=0
+debug.sf.enable_gl_backpressure=1
 persist.vendor.adapt.sampler=true
 
 # Graphics
