@@ -315,7 +315,7 @@ echo 0 > /sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq
 # configure input boost settings
 case "$soc_id" in
         "518" | "561" | "585")
-		echo 1190000 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
+		echo 1190400 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
 		;;
 	"417" | "420" | "444" | "445")
 		echo 1017600 0 0 0 0 0 0 0 > /proc/sys/walt/input_boost/input_boost_freq
