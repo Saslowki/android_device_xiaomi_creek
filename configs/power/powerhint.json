@@ -27,6 +27,7 @@
         "691200",
         "300000"
       ],
+      "DefaultIndex": 5,
       "ResetOnInit": true
     },
     {
@@ -60,6 +61,7 @@
         "806400",
         "300000"
       ],
+      "DefaultIndex": 6,
       "ResetOnInit": true
     },
     {
@@ -84,6 +86,7 @@
         "1",
         "0"
       ],
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -106,6 +109,7 @@
         "3000000",
         "0"
       ],
+      "DefaultIndex": 2,
       "ResetOnInit": true
     },
     {
@@ -116,6 +120,7 @@
         "15",
         "0"
       ],
+      "DefaultIndex": 2,
       "ResetOnInit": true
     },
     {
@@ -127,6 +132,7 @@
         "35",
         "51"
       ],
+      "DefaultIndex": 3,
       "ResetOnInit": true
     },
     {
@@ -136,6 +142,7 @@
         "0",
         "35"
       ],
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -146,6 +153,7 @@
         "35",
         "40"
       ],
+      "DefaultIndex": 2,
       "ResetOnInit": true
     },
     {
@@ -173,8 +181,10 @@
         "785000000",
         "600000000",
         "465000000",
-        "320000000"
+        "320000000",
+        "0"
       ],
+      "DefaultIndex": 7,
       "ResetOnInit": true
     },
     {
@@ -184,6 +194,7 @@
         "1",
         "0"
       ],
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -193,6 +204,7 @@
         "1",
         "0"
       ],
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -205,6 +217,7 @@
         "500",
         "58"
       ],
+      "DefaultIndex": 4,
       "ResetOnInit": true
     },
     {
@@ -214,6 +227,7 @@
         "0",
         "3"
       ],
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -223,6 +237,7 @@
         "0",
         "20"
       ],
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -232,6 +247,7 @@
         "0",
         "10"
       ],
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -246,6 +262,7 @@
         "547000",
         "200000"
       ],
+      "DefaultIndex": 6,
       "ResetOnInit": true
     },
     {
@@ -255,6 +272,7 @@
         "SUSTAINED_PERFORMANCE",
         ""
       ],
+      "DefaultIndex": 1,
       "Type": "Property"
     },
     {
@@ -264,6 +282,7 @@
         "AUDIO_STREAMING_LOW_LATENCY",
         ""
       ],
+      "DefaultIndex": 1,
       "Type": "Property"
     },
     {
@@ -273,6 +292,7 @@
         "EXPENSIVE_RENDERING",
         ""
       ],
+      "DefaultIndex": 1,
       "Type": "Property"
     }
   ],
@@ -287,25 +307,25 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1344000"
+      "Value": "1766400"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 0,
-      "Value": "1190400"
+      "Value": "1516800"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "465000000"
+      "Value": "600000000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "1190400"
+      "Value": "940800"
     },
     {
       "PowerHint": "INTERACTION",
@@ -317,7 +337,7 @@
       "PowerHint": "INTERACTION",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "785000000"
+      "Value": "465000000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -471,45 +491,45 @@
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "CPUBWMinFreq",
+      "Duration": 3000,
+      "Value": "2092000"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "SchedMinTaskUtilForBoost",
-      "Duration": 0,
+      "Duration": 3000,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "SchedMinTaskUtilForColoc",
-      "Duration": 0,
+      "Duration": 3000,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "SchedMinTaskUtilForUclamp",
-      "Duration": 0,
+      "Duration": 3000,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHystTriggerCount",
-      "Duration": 0,
+      "Duration": 3000,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHystLength",
-      "Duration": 0,
+      "Duration": 3000,
       "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBWHistMemory",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUBWMinFreq",
       "Duration": 3000,
-      "Value": "2092000"
+      "Value": "0"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -521,13 +541,13 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "1804800"
+      "Value": "1190400"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "2208000"
+      "Value": "1766400"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -539,7 +559,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "1025000000"
+      "Value": "600000000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
