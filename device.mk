@@ -495,8 +495,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-$(call soong_config_set,qtipower,mode_ext_lib,//$(LOCAL_PATH):libpowermode-ext-creek)
-$(call soong_config_set,qtipower,tap_to_wake_node,/proc/tp_gesture)
 
 # QMI
 PRODUCT_PACKAGES += \
