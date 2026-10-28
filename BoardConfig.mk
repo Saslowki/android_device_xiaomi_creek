@@ -350,7 +350,7 @@ DEVICE_MATRIX_FILE += \
 # Display Graphics
 TARGET_SCREEN_DENSITY                          := 420
 TARGET_HAS_HDR_DISPLAY                         := false
-TARGET_HAS_WIDE_COLOR_DISPLAY                  := true
+TARGET_HAS_WIDE_COLOR_DISPLAY                  := false
 TARGET_USES_VULKAN                             := false
 
 # Audio Configuration Interface
