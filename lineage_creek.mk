@@ -27,7 +27,7 @@ PRODUCT_NAME              := lineage_creek
 PRODUCT_DEVICE            := creek
 PRODUCT_MANUFACTURER      := Xiaomi
 PRODUCT_BRAND             := Redmi
-PRODUCT_MODEL             := Redmi 15
+PRODUCT_MODEL             := Redmi 15 4G
 WITH_GMS := false
 WITH_MICROG := true
 
