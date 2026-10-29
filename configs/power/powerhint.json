@@ -613,6 +613,132 @@
       "Node": "UclampTAMin",
       "Duration": 0,
       "Value": "40"
-    }
+    },
+    {
+      "PowerHint": "APP_START",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "1766400"
+    },
+    {
+      "PowerHint": "APP_START",
+      "Node": "SchedBoost",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "APP_START",
+      "Node": "HispeedFreqBig",
+      "Duration": 0,
+      "Value": "2054400"
+    },
+    {
+      "PowerHint": "APP_START",
+      "Node": "HispeedFreqLittle",
+      "Duration": 0,
+      "Value": "1708800"
+    },
+    {
+      "PowerHint": "UI_ANIMATION",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "1516800"
+    },
+    {
+      "PowerHint": "UI_ANIMATION",
+      "Node": "SchedBoost",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "UI_ANIMATION",
+      "Node": "HispeedFreqBig",
+      "Duration": 0,
+      "Value": "1651200"
+    },
+    {
+      "PowerHint": "FLING",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "1344000"
+    },
+    {
+      "PowerHint": "FLING",
+      "Node": "SchedBoost",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "FLING",
+      "Node": "HispeedFreqBig",
+      "Duration": 0,
+      "Value": "1651200"
+    },
+    {
+      "PowerHint": "FLING",
+      "Node": "HispeedFreqLittle",
+      "Duration": 0,
+      "Value": "1708800"
+    },
+    {
+      "PowerHint": "SYSTEM_UI",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "2054400"
+    },
+    {
+      "PowerHint": "SYSTEM_UI",
+      "Node": "SchedBoost",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "SYSTEM_UI",
+      "Node": "HispeedFreqBig",
+      "Duration": 0,
+      "Value": "2054400"
+    },
+    {
+      "PowerHint": "SYSTEM_UI",
+      "Node": "HispeedFreqLittle",
+      "Duration": 0,
+      "Value": "1708800"
+    },
+    {
+      "PowerHint": "GPU_BENCHMARK",
+      "Node": "GPUMaxFreq",
+      "Duration": 0,
+      "Value": "1260000000"
+    },
+    {
+      "PowerHint": "GPU_BENCHMARK",
+      "Node": "GPUMinFreq",
+      "Duration": 0,
+      "Value": "785000000"
+    },
+    {
+      "PowerHint": "GPU_BENCHMARK",
+      "Node": "GPUForceRailOn",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "GPU_BENCHMARK",
+      "Node": "GPUForceClkOn",
+      "Duration": 0,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "GPU_BENCHMARK",
+      "Node": "GPUIdleTimer",
+      "Duration": 0,
+      "Value": "10000"
+    },
+    {
+      "PowerHint": "GPU_BENCHMARK",
+      "Node": "UclampTAMin",
+      "Duration": 0,
+      "Value": "40"  
+    }  
   ]
 }
