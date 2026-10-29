@@ -19,6 +19,9 @@ $(call inherit-product, packages/apps/FastCharge/fastcharge.mk)
 # Include our private certificate
 -include vendor/lineage-priv/keys/keys.mk
 
+# Gapps
+-include vendor/gapps/arm64/arm64-vendor.mk
+
 # additional features can be added here
 -include device/xiaomi/creek/features.mk
 
@@ -28,8 +31,7 @@ PRODUCT_DEVICE            := creek
 PRODUCT_MANUFACTURER      := Xiaomi
 PRODUCT_BRAND             := Redmi
 PRODUCT_MODEL             := Redmi 15 4G
-WITH_GMS := false
-WITH_MICROG := true
+WITH_GMS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
