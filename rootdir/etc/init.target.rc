@@ -82,20 +82,6 @@ on late-fs
     exec_start wait_for_keymaster
     mount_all --late
 
-    # ZRAM compressed swap, sized at runtime from total RAM
-    # (QTI rule: 75% of RAM up to 2GB devices, else 50%, cap 4GB).
-    # Stock enabled it via perfservice.rc ("swapon_all
-    # /vendor/etc/fstab.default"), which is not shipped here; without
-    # this Total swap stays at 0kB and large image workloads hit OOM.
-    start vendor.zram-setup
-
-service vendor.zram-setup /vendor/bin/sh /vendor/bin/init.creek.zram.sh
-    class late_start
-    user root
-    group root system wakelock graphics
-    disabled
-    oneshot
-
 # Fix ownership of Android/data and Android/obb so the FUSE daemon
 # (MediaProvider, group media_rw) can create per-package dirs. Legacy
 # /data state leaves them root-owned and every app fails with

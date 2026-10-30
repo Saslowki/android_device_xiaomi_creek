@@ -334,7 +334,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.vendor_ramdisk \
-    init.creek.zram.sh \
+    fstab.zram \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.qti.kernel.rc \

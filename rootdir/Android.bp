@@ -11,6 +11,13 @@ prebuilt_etc {
     vendor_ramdisk_available: true,
 }
 
+// zram
+prebuilt_etc {
+    name: "fstab.zram",
+    src: "etc/fstab.zram",
+    vendor: true,
+}
+
 // Init configuration files
 prebuilt_etc {
     name: "init.qcom.rc",
@@ -65,13 +72,6 @@ prebuilt_etc {
 sh_binary {
     name: "init.class_main.sh",
     src: "bin/init.class_main.sh",
-    vendor: true,
-}
-
-// ZRAM setup sized from runtime RAM (see init.creek.zram.sh)
-sh_binary {
-    name: "init.creek.zram.sh",
-    src: "bin/init.creek.zram.sh",
     vendor: true,
 }
 

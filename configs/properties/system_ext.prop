@@ -24,6 +24,7 @@ persist.sys.gps.fence=true
 
 # Graphics
 ro.surface_flinger.supports_background_blur=0
+persist.wm.enable_remote_keyguard_animation=0
 
 # Media
 vendor.media.target_variant=_khaje_v0
