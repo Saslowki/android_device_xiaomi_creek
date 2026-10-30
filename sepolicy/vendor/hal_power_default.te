@@ -23,13 +23,3 @@ set_prop(hal_power_default, vendor_power_prop)
 
 allow hal_power_default vendor_sysfs_kgsl:dir search;
 allow hal_power_default vendor_sysfs_kgsl:file rw_file_perms;
-
-# Allow Power HAL to control CPU frequencies
-allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
-
-# Allow Power HAL to control cgroups
-allow hal_power_default cgroup:dir search;
-allow hal_power_default cgroup:file rw_file_perms;
-
-# Allow Power HAL to write to WALT scheduler nodes
-allow hal_power_default proc_sched:file rw_file_perms;
