@@ -17,15 +17,350 @@
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
 
+    <!-- Stock HyperOS 3 automatic-brightness calibration. -->
+    <integer-array name="config_autoBrightnessLevels">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+        <item>85</item>
+        <item>90</item>
+        <item>95</item>
+        <item>100</item>
+        <item>120</item>
+        <item>140</item>
+        <item>160</item>
+        <item>180</item>
+        <item>200</item>
+        <item>220</item>
+        <item>240</item>
+        <item>260</item>
+        <item>280</item>
+        <item>300</item>
+        <item>320</item>
+        <item>340</item>
+        <item>360</item>
+        <item>380</item>
+        <item>400</item>
+        <item>420</item>
+        <item>440</item>
+        <item>460</item>
+        <item>480</item>
+        <item>500</item>
+        <item>700</item>
+        <item>900</item>
+        <item>1100</item>
+        <item>1300</item>
+        <item>1500</item>
+        <item>1700</item>
+        <item>1900</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>4000</item>
+        <item>4500</item>
+        <item>5000</item>
+        <item>5500</item>
+        <item>6000</item>
+        <item>6500</item>
+        <item>7000</item>
+        <item>7500</item>
+        <item>8000</item>
+        <item>8500</item>
+        <item>9000</item>
+        <item>9500</item>
+        <item>10000</item>
+        <item>10500</item>
+        <item>11000</item>
+        <item>11500</item>
+        <item>12000</item>
+        <item>12500</item>
+        <item>13000</item>
+        <item>13500</item>
+        <item>14000</item>
+        <item>14500</item>
+        <item>15000</item>
+        <item>16000</item>
+        <item>17000</item>
+        <item>18000</item>
+        <item>19000</item>
+        <item>20000</item>
+        <item>21000</item>
+        <item>22000</item>
+        <item>23000</item>
+        <item>24000</item>
+        <item>25000</item>
+        <item>26000</item>
+        <item>27000</item>
+        <item>28000</item>
+        <item>29000</item>
+        <item>30000</item>
+        <item>35000</item>
+        <item>40000</item>
+        <item>45000</item>
+        <item>50000</item>
+        <item>55000</item>
+        <item>60000</item>
+        <item>65000</item>
+        <item>70000</item>
+        <item>75000</item>
+        <item>80000</item>
+        <item>85000</item>
+        <item>90000</item>
+        <item>95000</item>
+        <item>100000</item>
+    </integer-array>
+
+    <array name="config_autoBrightnessDisplayValuesNits">
+        <item>6.1</item>
+        <item>6.2</item>
+        <item>6.4</item>
+        <item>15.2</item>
+        <item>20.5</item>
+        <item>26.5</item>
+        <item>34.5</item>
+        <item>50</item>
+        <item>65</item>
+        <item>81</item>
+        <item>88</item>
+        <item>88</item>
+        <item>88</item>
+        <item>88</item>
+        <item>89</item>
+        <item>89</item>
+        <item>90</item>
+        <item>90</item>
+        <item>90</item>
+        <item>91</item>
+        <item>91</item>
+        <item>92</item>
+        <item>93</item>
+        <item>93</item>
+        <item>93</item>
+        <item>96</item>
+        <item>98</item>
+        <item>99</item>
+        <item>101</item>
+        <item>103</item>
+        <item>105</item>
+        <item>106</item>
+        <item>108</item>
+        <item>111</item>
+        <item>112</item>
+        <item>114</item>
+        <item>117</item>
+        <item>119</item>
+        <item>120</item>
+        <item>123</item>
+        <item>125</item>
+        <item>126</item>
+        <item>128</item>
+        <item>130</item>
+        <item>132</item>
+        <item>159</item>
+        <item>176</item>
+        <item>201.5</item>
+        <item>227</item>
+        <item>248</item>
+        <item>278</item>
+        <item>285</item>
+        <item>315</item>
+        <item>340</item>
+        <item>390</item>
+        <item>409</item>
+        <item>460</item>
+        <item>515</item>
+        <item>535</item>
+        <item>600</item>
+        <item>636</item>
+        <item>700</item>
+        <item>720</item>
+        <item>776</item>
+        <item>813</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+        <item>850</item>
+    </array>
+
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>14</item>
+        <item>20</item>
+        <item>45</item>
+        <item>63</item>
+        <item>81</item>
+        <item>107</item>
+        <item>154</item>
+        <item>211</item>
+        <item>259</item>
+        <item>289</item>
+        <item>292</item>
+        <item>292</item>
+        <item>292</item>
+        <item>295</item>
+        <item>295</item>
+        <item>298</item>
+        <item>298</item>
+        <item>298</item>
+        <item>301</item>
+        <item>301</item>
+        <item>304</item>
+        <item>307</item>
+        <item>307</item>
+        <item>307</item>
+        <item>316</item>
+        <item>322</item>
+        <item>328</item>
+        <item>334</item>
+        <item>340</item>
+        <item>345</item>
+        <item>351</item>
+        <item>354</item>
+        <item>363</item>
+        <item>366</item>
+        <item>372</item>
+        <item>381</item>
+        <item>387</item>
+        <item>390</item>
+        <item>399</item>
+        <item>404</item>
+        <item>407</item>
+        <item>416</item>
+        <item>422</item>
+        <item>428</item>
+        <item>498</item>
+        <item>573</item>
+        <item>647</item>
+        <item>720</item>
+        <item>782</item>
+        <item>864</item>
+        <item>921</item>
+        <item>965</item>
+        <item>1155</item>
+        <item>1192</item>
+        <item>1229</item>
+        <item>1266</item>
+        <item>1303</item>
+        <item>1340</item>
+        <item>1377</item>
+        <item>1414</item>
+        <item>1451</item>
+        <item>1488</item>
+        <item>1525</item>
+        <item>1561</item>
+        <item>1598</item>
+        <item>1635</item>
+        <item>1672</item>
+        <item>1709</item>
+        <item>1746</item>
+        <item>1783</item>
+        <item>1820</item>
+        <item>1857</item>
+        <item>1894</item>
+        <item>1931</item>
+        <item>1968</item>
+        <item>2005</item>
+        <item>2018</item>
+        <item>2047</item>
+        <item>2084</item>
+        <item>2135</item>
+        <item>2185</item>
+        <item>2249</item>
+        <item>2299</item>
+        <item>2363</item>
+        <item>2413</item>
+        <item>2464</item>
+        <item>2527</item>
+        <item>2578</item>
+        <item>2642</item>
+        <item>2692</item>
+        <item>2742</item>
+        <item>2806</item>
+        <item>2856</item>
+        <item>3124</item>
+        <item>3392</item>
+        <item>3659</item>
+        <item>3684</item>
+        <item>3743</item>
+        <item>3801</item>
+        <item>3860</item>
+        <item>3918</item>
+        <item>3976</item>
+        <item>4035</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+        <item>4095</item>
+    </integer-array>
+
+    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
+
+    <!-- Match the stock 12-bit panel range and the copied displayconfig calibration. -->
+    <item name="config_screenBrightnessDimFloat" format="float" type="dimen">0.00170982</item>
+    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.0747435</item>
+    <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item>
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.00170982</item>
+
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
-
-    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
-         in hardware. -->
-    <bool name="config_setColorTransformAccelerated">true</bool>
-
-    <!-- Enable double tap to wake capability in Settings -->
-    <bool name="config_supportDoubleTapWake">true</bool>
 
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
@@ -33,22 +368,10 @@
         <item>1</item> <!-- COLOR_MODE_BOOSTED -->
     </integer-array>
 
-    <!-- Color mode to use when accessibility transforms are enabled. This color mode must be
-         supported by the device, but not necessarily appear in config_availableColorModes. The
-         regularly selected color mode will be used if this value is negative. -->
+    <!-- Color mode to use when accessibility transforms are enabled. -->
     <integer name="config_accessibilityColorMode">1</integer>
 
-    <!-- The following two arrays specify which color space to use for display composition when a
-         certain color mode is active.
-         Composition color spaces are defined in android.view.Display.COLOR_MODE_xxx, and color
-         modes are defined in ColorDisplayManager.COLOR_MODE_xxx and
-         ColorDisplayManager.VENDOR_COLOR_MODE_xxx.
-         The color space COLOR_MODE_DEFAULT (0) lets the system select the most appropriate
-         composition color space for currently displayed content. Other values (e.g.,
-         COLOR_MODE_SRGB) override system selection; these other color spaces must be supported by
-         the device for for display composition.
-         If a color mode does not have a corresponding color space specified in this array, the
-         currently set composition color space will not be modified.-->
+    <!-- Display composition color spaces -->
     <integer-array name="config_displayCompositionColorModes">
         <item>0</item> <!-- COLOR_MODE_NATURAL   -->
         <item>1</item> <!-- COLOR_MODE_BOOSTED   -->
@@ -62,9 +385,7 @@
     <!-- Is the device capable of hot swapping an UICC Card -->
     <bool name="config_hotswapCapable">true</bool>
 
-    <!-- Screen brightness used to dim the screen while dozing in a very low power state.
-         May be less than the minimum allowed brightness setting
-         that can be set by the user. -->
+    <!-- Screen brightness used to dim the screen while dozing in a very low power state. -->
     <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.06667</item>
 
     <!-- The restoring is handled by modem if it is true-->
@@ -73,67 +394,33 @@
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
 
-    <!-- MMS user agent prolfile url -->
+    <!-- MMS user agent profile url -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
-    <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
-         autodetected from the Configuration. -->
+    <!-- Whether a software navigation bar should be shown. -->
     <bool name="config_showNavigationBar">true</bool>
 
-    <!-- ComponentName of a dream to show whenever the system would otherwise have
-         gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
-         try to start this dream if possible.  The dream should typically call startDozing()
-         to put the display into a low power state and allow the application processor
-         to be suspended.  When the dream ends, the system will go to sleep as usual.
-         Specify the component name or an empty string if none.
-
-         Note that doze dreams are not subject to the same start conditions as ordinary dreams.
-         Doze dreams will run whenever the power manager is in a dozing state. -->
+    <!-- ComponentName of a dream to show whenever the system would otherwise have gone to sleep. -->
     <string name="config_dozeComponent" translatable="false">com.android.systemui/com.android.systemui.doze.DozeService</string>
 
-    <!-- If true, the doze component is not started until after the screen has been
-         turned off and the screen off animation has been performed. -->
+    <!-- If true, the doze component is not started until after the screen has been turned off. -->
     <bool name="config_dozeAfterScreenOffByDefault">false</bool>
 
-    <!-- Power Management: Specifies whether to decouple the interactive state of the
-         device from the display on/off state.
-
-         When false, setInteractive(..., true) will be called before the display is turned on
-         and setInteractive(..., false) will be called after the display is turned off.
-         This mode provides best compatibility for devices that expect the interactive
-         state to be tied to the display state.
-
-         When true, setInteractive(...) will be called independently of whether the display
-         is being turned on or off.  This mode enables the power manager to reduce
-         clocks and disable the touch controller while the display is on.
-
-         This resource should be set to "true" when a doze component has been specified
-         to maximize power savings but not all devices support it.
-
-         Refer to power.h for details.
-    -->
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
 
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
-    <!--  Maximum number of supported users -->
+    <!-- Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
 
     <!-- Whether UI for multi user should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 
-    <!-- Safe headphone volume index. When music stream volume is below this index
-    the SPL on headphone output is compliant to EN 60950 requirements for portable music
-    players. -->
+    <!-- Safe headphone volume index. -->
     <integer name="config_safe_media_volume_index">100</integer>
 
-    <!-- Configure tcp buffer sizes per network type in the form:
-         network-type:rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max
-
-         The network-type must be a valid DataConfigNetworkType value. If no value is found for the
-         network-type in use, config_tcp_buffers will be used instead.
-    -->
+    <!-- Configure tcp buffer sizes per network type -->
     <string-array name="config_network_type_tcp_buffers">
         <item>LTE:2097152,4194304,8388608,262144,524288,1048576</item>
         <item>LTE_CA:4096,6291456,12582912,4096,1048576,2097152</item>
@@ -149,127 +436,66 @@
         <item>EvDo_B:4094,87380,524288,4096,16384,262144</item>
     </string-array>
 
-    <!-- Set to true if the wifi display supports compositing content stored
-         in gralloc protected buffers.  For this to be true, there must exist
-         a protected hardware path for surface flinger to composite and send
-         protected buffers to the wifi display video encoder.
-
-         If this flag is false, we advise applications not to use protected
-         buffers (if possible) when presenting content to a wifi display because
-         the content may be blanked.
-
-         This flag controls whether the {@link Display#FLAG_SUPPORTS_PROTECTED_BUFFERS}
-         flag is set for wifi displays.
-    -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
-
-    <!-- Whether camera shutter sound is forced or not  (country specific). -->
     <bool name="config_camera_sound_forced">false</bool>
-
-    <!-- Flag indicating if the speed up audio on mt call code should be executed -->
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
 
-    <!-- Whether or not wcg (wide color gamut) should be enabled on this device,
-         we only enabled it while the device has ability of mixed color spaces composition -->
-    <bool name="config_enableWcgMode">true</bool>
+    <!-- Set to false for standard sRGB IPS LCD panel -->
+    <bool name="config_enableWcgMode">false</bool>
 
-    <!-- set to false if we need to show user confirmation
-         when alpha identifier is not provided by the UICC -->
     <bool name="config_stkNoAlphaUsrCnf">false</bool>
-
-    <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
-
-    <!--  Define optional package verifier name -->
     <string name="config_optionalPackageVerifierName" translatable="false">seemp.service</string>
-
-    <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
-
-    <!-- Flag specifying whether VoLTE should be available for carrier: independent of
-         carrier provisioning. If false: hard disabled. If true: then depends on carrier
-         provisioning, availability etc -->
     <bool name="config_carrier_volte_available">true</bool>
-
-    <!-- Flag specifying whether VT is available on device -->
     <bool name="config_device_vt_available">true</bool>
-
-    <!-- Flag specifying whether WFC over IMS is available on device -->
     <bool name="config_device_wfc_ims_available">true</bool>
-
-    <!-- Config determines whether to update phone object when voice registration
-         state changes. Voice radio tech change will always trigger an update of
-         phone object irrespective of this config -->
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
-
-    <!--The default "usage setting" indicating that the device is either a voice-centric
-    device (1) or a data-centric device (2). A voice-centric device will require that any cellular
-    service that it uses provides access to voice capability, and a data-centric device will
-    likewise require that the network provides access to data services. These settings are
-    sent to the cellular modem and control the behavior in accordance with 3gpp TS 24.301 sec 4.3
-    (and equivalent functionality in other generations of cellular).-->
     <integer name="config_default_cellular_usage_setting">-1</integer>
-
-    <!-- Whether the Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
 
-    <!-- The display uses different gamma curves for different refresh rates. It's hard for panel
-         vendor to tune the curves to have exact same brightness for different refresh rate. So
-         flicker could be observed at switch time. The issue is worse at the gamma lower end.
-         In addition, human eyes are more sensitive to the flicker at darker environment.
-         To prevent flicker, we only support higher refresh rates if the display brightness is above
-         a threshold. And the darker environment could have higher threshold.
-         For example, no higher refresh rate if
-             display brightness <= disp0 && ambient brightness <= amb0
-             || display brightness <= disp1 && ambient brightness <= amb1 -->
+    <!-- Refresh rate brightness thresholds -->
     <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
-        <item>10</item> <!-- 33% UI brightness -->
-        <item>14</item> <!-- 40% UI brightness -->
+        <item>10</item>
+        <item>14</item>
     </integer-array>
     <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
         <item>-1</item>
         <item>20</item>
     </integer-array>
 
-    <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
-         If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
     <integer name="config_defaultRefreshRateInZone">0</integer>
+    <integer name="config_defaultRefreshRate">0</integer>
 
-    <!-- Baseline render frame rate ceiling for DisplayModeDirector's default vote.
-         The AOSP default of 60 caps the render range at exactly the user minimum
-         when a 60 Hz floor is selected, preventing any dynamic boost above it.
-         Match the panel peak so touch/content can use the full supported range. -->
-    <integer name="config_defaultRefreshRate">144</integer>
+    <!-- Peak refresh rate: Set to 144Hz for Redmi 15 4G display panel -->
+    <integer name="config_defaultPeakRefreshRate">144</integer>
 
-    <!-- Vibrator pattern for feedback about a long screen/key press -->
+    <!-- Refresh rate UI switches -->
+    <bool name="config_show_min_refresh_rate_switch">true</bool>
+    <bool name="config_show_peak_refresh_rate_switch">true</bool>
+    <bool name="config_show_smooth_display">true</bool>
+     
+    <!-- Haptics / Vibrator patterns -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
         <item>1</item>
         <item>20</item>
         <item>21</item>
     </integer-array>
-
-    <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
         <item>10</item>
         <item>20</item>
         <item>30</item>
     </integer-array>
-
-    <!-- Vibrator pattern for feedback when selecting an hour/minute tick of a Clock -->
     <integer-array name="config_clockTickVibePattern">
         <item>125</item>
         <item>30</item>
     </integer-array>
-
-    <!-- Vibrator pattern for feedback when selecting a day/month/year date of a Calendar -->
     <integer-array name="config_calendarDateVibePattern">
         <item>125</item>
         <item>30</item>
     </integer-array>
-
-    <!-- Vibrator pattern for feedback about booting with safe mode enabled -->
     <integer-array name="config_safeModeEnabledVibePattern">
         <item>0</item>
         <item>1</item>
@@ -278,8 +504,6 @@
         <item>500</item>
         <item>600</item>
     </integer-array>
-
-    <!-- Vibrator pattern for feedback about hitting a scroll barrier -->
     <integer-array name="config_scrollBarrierVibePattern">
         <item>0</item>
         <item>15</item>
@@ -287,133 +511,34 @@
         <item>10</item>
     </integer-array>
 
-<!-- The default intensity level for haptic feedback. See
-         Settings.System.HAPTIC_FEEDBACK_INTENSITY more details on the constant values and
-         meanings. -->
     <integer name="config_defaultHapticFeedbackIntensity">3</integer>
-
-    <!-- The default intensity level for notification vibrations. See
-         Settings.System.NOTIFICATION_VIBRATION_INTENSITY more details on the constant values and
-         meanings. -->
     <integer name="config_defaultNotificationVibrationIntensity">3</integer>
-
-    <!-- The default intensity level for notification vibrations. See
-         Settings.System.RING_VIBRATION_INTENSITY more details on the constant values and
-         meanings. -->
     <integer name="config_defaultRingVibrationIntensity">3</integer>
 
-    <!-- Whether to select voice/data/sms preference without user confirmation -->
     <bool name="config_voice_data_sms_auto_fallback">true</bool>
-
-    <!-- Whether to adopt the predefined handover policies for IWLAN.
-         {@see CarrierConfigManager#KEY_IWLAN_HANDOVER_POLICY_STRING_ARRAY}
-    -->
     <bool name="config_enable_iwlan_handover_policy">false</bool>
-
-    <!-- IWLAN data service package name to bind to by default. If none is specified in an overlay,
-         an empty string is passed in -->
     <string name="config_wlan_data_service_package" translatable="false">vendor.qti.iwlan</string>
-
-    <!-- IWLAN network service package name to bind to by default. If none is specified in an
-         overlay, an empty string is passed in -->
     <string name="config_wlan_network_service_package" translatable="false">vendor.qti.iwlan</string>
-
-    <!-- Telephony qualified networks service package name to bind to by default. -->
     <string name="config_qualified_networks_service_package" translatable="false">vendor.qti.iwlan</string>
-
-    <!-- Whether enhanced IWLAN handover check is enabled. If enabled, telephony frameworks
-         will not perform handover if the target transport is out of service, or VoPS not
-         supported. The network will be torn down on the source transport, and will be
-         re-established on the target transport when condition is allowed for bringing up a
-         new network. -->
     <bool name="config_enhanced_iwlan_handover_check">false</bool>
-
-    <!-- Whether to enable Lineage Health Service -->
     <bool name="config_lineageHealthSupported">true</bool>
-
-    <!-- Whether WiFi display is supported by this device.
-         There are many prerequisites for this feature to work correctly.
-         Here are a few of them:
-         * The WiFi radio must support WiFi P2P.
-         * The WiFi radio must support concurrent connections to the WiFi display and
-           to an access point.
-         * The Audio Flinger audio_policy.conf file must specify a rule for the "r_submix"
-           remote submix module.  This module is used to record and stream system
-           audio output to the WiFi display encoder in the media server.
-         * The remote submix module "audio.r_submix.default" must be installed on the device.
-         * The device must be provisioned with HDCP keys (for protected content).
-    -->
     <bool name="config_enableWifiDisplay">true</bool>
 
-    <!-- If true, the display will be shifted around in ambient mode. -->
-    <bool name="config_enableBurnInProtection">true</bool>
+    <!-- Set to false for IPS LCD (burn-in protection is only for OLED/AMOLED) -->
+    <bool name="config_enableBurnInProtection">false</bool>
 
-    <!-- If not empty, sets the AVC codec profile level used for the internal screen recorder.
-         Possible values: 3, 3.1, 3.2, 4, 4.1, 4.2
-    -->
     <string name="config_screenRecorderAVCProfileLevel" translatable="false">4.2</string>
 
-     <!-- The default journal mode to use use when Write-Ahead Logging is not active.
-         Choices are: OFF, DELETE, TRUNCATE, PERSIST and MEMORY.
-         PERSIST may improve performance by reducing how often journal blocks are
-         reallocated (compared to truncation) resulting in better data block locality
-         and less churn of the storage media.
-         The PERSIST mode results in data persisting in the journal beyond the life of
-         a transaction, so it interacts poorly with SECURE_DELETE. -->
-    <string name="db_default_journal_mode" translatable="false">TRUNCATE</string>
-
-    <!-- The database synchronization mode when using the default journal mode.
-         FULL is safest and preserves durability at the cost of extra fsyncs.
-         NORMAL also preserves durability in non-WAL modes and uses checksums to ensure
-         integrity although there is a small chance that an error might go unnoticed.
-         Choices are: FULL, NORMAL, OFF. -->
+    <!-- Safe and fast SQLite database configuration (prevents data corruption on crash) -->
+    <string name="db_default_journal_mode" translatable="false">WAL</string>
     <string name="db_default_sync_mode" translatable="false">NORMAL</string>
-
-    <!-- The database synchronization mode when using Write-Ahead Logging.
-         From https://www.sqlite.org/pragma.html#pragma_synchronous:
-         WAL mode is safe from corruption with synchronous=NORMAL, and probably DELETE mode is safe
-         too on modern filesystems. WAL mode is always consistent with synchronous=NORMAL, but WAL
-         mode does lose durability. A transaction committed in WAL mode with
-         synchronous=NORMAL might roll back following a power loss or system crash.
-         Transactions are durable across application crashes regardless of the synchronous setting
-         or journal mode. The synchronous=NORMAL setting is a good choice for most applications
-         running in WAL mode.
-         Choices are: FULL, NORMAL, OFF. -->
     <string name="db_wal_sync_mode" translatable="false">NORMAL</string>
 
-    <!-- Determines whether the shell features all run on another thread. This is to be overrided
-         by the resources of the app using the Shell library. -->
     <bool name="config_enableShellMainThread">true</bool>
-
-    <!-- Flag indicating whether the surfaceflinger has limited
-         alpha compositing functionality in hardware.  If set, the window
-         manager will disable alpha trasformation in animations where not
-         strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
-
-    <string-array name="configs_base">
-        <!-- ART heap compaction for cached apps -->
-        <item>activity_manager/use_compaction=true</item>
-
-        <!-- Allow more cached apps in the background -->
-        <item>activity_manager/max_cached_processes=64</item>
-    </string-array>
-    
-    <!-- Set this to true to enable the platform's auto-power-save modes like doze and
-         app standby.  These are not enabled by default because they require a standard
-         cloud-to-device messaging service for apps to interact correctly with the modes
-         (such as to be able to deliver an instant message to the device even when it is
-         dozing).  This should be enabled if you have such services and expect apps to
-         correctly use them when installed on your device.  Otherwise, keep this disabled
-         so that applications can still use their own mechanisms. -->
     <bool name="config_enableAutoPowerModes">true</bool>
-
-    <!-- Flag indicating whether we should enable the adaptive sleep.-->
     <bool name="config_adaptive_sleep_available">true</bool>
 
-    <!-- Flag indicating whether the surface flinger is inefficient
-         at performing a blur.  Used by parts of the UI to turn off
-         the blur effect where it isn't worth the performance hit.
-         As of Honeycomb, blurring is not supported anymore. -->
-    <bool name="config_sf_slowBlur">false</bool>
+    <!-- Set to true so UI drops heavy blur effects that lag the Adreno 610 GPU -->
+    <bool name="config_sf_slowBlur">true</bool>
 </resources>
