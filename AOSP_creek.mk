@@ -24,14 +24,11 @@ endif
 # Defaults for File System (can be overridden via environment variables)
 WITH_EROFS := true
 
-# import miui-camera
-$(call inherit-product-if-exists, device/xiaomi/camera/miuicamera.mk)
-
 # Basic identifiers
 PRODUCT_DEVICE            := creek
 PRODUCT_MANUFACTURER      := Xiaomi
 PRODUCT_BRAND             := Xiaomi
-PRODUCT_MODEL             := POCO M7 4G
+PRODUCT_MODEL             := Redmi 15 4G
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
