@@ -5,370 +5,32 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- An Array of "[ConnectivityManager connectionType],
-                      [# simultaneous connection types]"  -->
+    <!-- Connectivity types -->
     <string-array name="radioAttributes" translatable="false">
         <item>1,1</item>
         <item>0,1</item>
         <item>7,1</item>
     </string-array>
 
-    <!-- Flag indicating whether we should enable the automatic brightness.
-         Software implementation will be used if config_hardware_auto_brightness_available is not set -->
+    <!-- Automatic brightness -->
     <bool name="config_automatic_brightness_available">true</bool>
 
-    <!-- Stock HyperOS 3 automatic-brightness calibration. -->
-    <integer-array name="config_autoBrightnessLevels">
-        <item>1</item>
-        <item>2</item>
-        <item>4</item>
-        <item>6</item>
-        <item>8</item>
-        <item>10</item>
-        <item>15</item>
-        <item>20</item>
-        <item>25</item>
-        <item>30</item>
-        <item>35</item>
-        <item>40</item>
-        <item>45</item>
-        <item>50</item>
-        <item>55</item>
-        <item>60</item>
-        <item>65</item>
-        <item>70</item>
-        <item>75</item>
-        <item>80</item>
-        <item>85</item>
-        <item>90</item>
-        <item>95</item>
-        <item>100</item>
-        <item>120</item>
-        <item>140</item>
-        <item>160</item>
-        <item>180</item>
-        <item>200</item>
-        <item>220</item>
-        <item>240</item>
-        <item>260</item>
-        <item>280</item>
-        <item>300</item>
-        <item>320</item>
-        <item>340</item>
-        <item>360</item>
-        <item>380</item>
-        <item>400</item>
-        <item>420</item>
-        <item>440</item>
-        <item>460</item>
-        <item>480</item>
-        <item>500</item>
-        <item>700</item>
-        <item>900</item>
-        <item>1100</item>
-        <item>1300</item>
-        <item>1500</item>
-        <item>1700</item>
-        <item>1900</item>
-        <item>2000</item>
-        <item>2500</item>
-        <item>3000</item>
-        <item>3500</item>
-        <item>4000</item>
-        <item>4500</item>
-        <item>5000</item>
-        <item>5500</item>
-        <item>6000</item>
-        <item>6500</item>
-        <item>7000</item>
-        <item>7500</item>
-        <item>8000</item>
-        <item>8500</item>
-        <item>9000</item>
-        <item>9500</item>
-        <item>10000</item>
-        <item>10500</item>
-        <item>11000</item>
-        <item>11500</item>
-        <item>12000</item>
-        <item>12500</item>
-        <item>13000</item>
-        <item>13500</item>
-        <item>14000</item>
-        <item>14500</item>
-        <item>15000</item>
-        <item>16000</item>
-        <item>17000</item>
-        <item>18000</item>
-        <item>19000</item>
-        <item>20000</item>
-        <item>21000</item>
-        <item>22000</item>
-        <item>23000</item>
-        <item>24000</item>
-        <item>25000</item>
-        <item>26000</item>
-        <item>27000</item>
-        <item>28000</item>
-        <item>29000</item>
-        <item>30000</item>
-        <item>35000</item>
-        <item>40000</item>
-        <item>45000</item>
-        <item>50000</item>
-        <item>55000</item>
-        <item>60000</item>
-        <item>65000</item>
-        <item>70000</item>
-        <item>75000</item>
-        <item>80000</item>
-        <item>85000</item>
-        <item>90000</item>
-        <item>95000</item>
-        <item>100000</item>
-    </integer-array>
-
-    <array name="config_autoBrightnessDisplayValuesNits">
-        <item>6.1</item>
-        <item>6.2</item>
-        <item>6.4</item>
-        <item>15.2</item>
-        <item>20.5</item>
-        <item>26.5</item>
-        <item>34.5</item>
-        <item>50</item>
-        <item>65</item>
-        <item>81</item>
-        <item>88</item>
-        <item>88</item>
-        <item>88</item>
-        <item>88</item>
-        <item>89</item>
-        <item>89</item>
-        <item>90</item>
-        <item>90</item>
-        <item>90</item>
-        <item>91</item>
-        <item>91</item>
-        <item>92</item>
-        <item>93</item>
-        <item>93</item>
-        <item>93</item>
-        <item>96</item>
-        <item>98</item>
-        <item>99</item>
-        <item>101</item>
-        <item>103</item>
-        <item>105</item>
-        <item>106</item>
-        <item>108</item>
-        <item>111</item>
-        <item>112</item>
-        <item>114</item>
-        <item>117</item>
-        <item>119</item>
-        <item>120</item>
-        <item>123</item>
-        <item>125</item>
-        <item>126</item>
-        <item>128</item>
-        <item>130</item>
-        <item>132</item>
-        <item>159</item>
-        <item>176</item>
-        <item>201.5</item>
-        <item>227</item>
-        <item>248</item>
-        <item>278</item>
-        <item>285</item>
-        <item>315</item>
-        <item>340</item>
-        <item>390</item>
-        <item>409</item>
-        <item>460</item>
-        <item>515</item>
-        <item>535</item>
-        <item>600</item>
-        <item>636</item>
-        <item>700</item>
-        <item>720</item>
-        <item>776</item>
-        <item>813</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-        <item>850</item>
-    </array>
-
-    <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>14</item>
-        <item>20</item>
-        <item>45</item>
-        <item>63</item>
-        <item>81</item>
-        <item>107</item>
-        <item>154</item>
-        <item>211</item>
-        <item>259</item>
-        <item>289</item>
-        <item>292</item>
-        <item>292</item>
-        <item>292</item>
-        <item>295</item>
-        <item>295</item>
-        <item>298</item>
-        <item>298</item>
-        <item>298</item>
-        <item>301</item>
-        <item>301</item>
-        <item>304</item>
-        <item>307</item>
-        <item>307</item>
-        <item>307</item>
-        <item>316</item>
-        <item>322</item>
-        <item>328</item>
-        <item>334</item>
-        <item>340</item>
-        <item>345</item>
-        <item>351</item>
-        <item>354</item>
-        <item>363</item>
-        <item>366</item>
-        <item>372</item>
-        <item>381</item>
-        <item>387</item>
-        <item>390</item>
-        <item>399</item>
-        <item>404</item>
-        <item>407</item>
-        <item>416</item>
-        <item>422</item>
-        <item>428</item>
-        <item>498</item>
-        <item>573</item>
-        <item>647</item>
-        <item>720</item>
-        <item>782</item>
-        <item>864</item>
-        <item>921</item>
-        <item>965</item>
-        <item>1155</item>
-        <item>1192</item>
-        <item>1229</item>
-        <item>1266</item>
-        <item>1303</item>
-        <item>1340</item>
-        <item>1377</item>
-        <item>1414</item>
-        <item>1451</item>
-        <item>1488</item>
-        <item>1525</item>
-        <item>1561</item>
-        <item>1598</item>
-        <item>1635</item>
-        <item>1672</item>
-        <item>1709</item>
-        <item>1746</item>
-        <item>1783</item>
-        <item>1820</item>
-        <item>1857</item>
-        <item>1894</item>
-        <item>1931</item>
-        <item>1968</item>
-        <item>2005</item>
-        <item>2018</item>
-        <item>2047</item>
-        <item>2084</item>
-        <item>2135</item>
-        <item>2185</item>
-        <item>2249</item>
-        <item>2299</item>
-        <item>2363</item>
-        <item>2413</item>
-        <item>2464</item>
-        <item>2527</item>
-        <item>2578</item>
-        <item>2642</item>
-        <item>2692</item>
-        <item>2742</item>
-        <item>2806</item>
-        <item>2856</item>
-        <item>3124</item>
-        <item>3392</item>
-        <item>3659</item>
-        <item>3684</item>
-        <item>3743</item>
-        <item>3801</item>
-        <item>3860</item>
-        <item>3918</item>
-        <item>3976</item>
-        <item>4035</item>
-        <item>4095</item>
-        <item>4095</item>
-        <item>4095</item>
-        <item>4095</item>
-        <item>4095</item>
-    </integer-array>
-
-    <integer name="config_autoBrightnessBrighteningLightDebounce">1000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">1000</integer>
-
-    <!-- Match the stock 12-bit panel range and the copied displayconfig calibration. -->
-    <item name="config_screenBrightnessDimFloat" format="float" type="dimen">0.00170982</item>
-    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.0747435</item>
-    <item name="config_screenBrightnessSettingMaximumFloat" format="float" type="dimen">1.0</item>
-    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.00170982</item>
-
-    <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
+    <!-- Wake screen on unplug -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
-    <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
+    <!-- Color transform acceleration -->
+    <bool name="config_setColorTransformAccelerated">true</bool>
+
+    <!-- Double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
+    <!-- Color modes -->
     <integer-array name="config_availableColorModes">
         <item>0</item> <!-- COLOR_MODE_NATURAL -->
         <item>1</item> <!-- COLOR_MODE_BOOSTED -->
     </integer-array>
 
-    <!-- Color mode to use when accessibility transforms are enabled. -->
+    <!-- Accessibility color mode -->
     <integer name="config_accessibilityColorMode">1</integer>
 
     <!-- Display composition color spaces -->
@@ -382,45 +44,44 @@
         <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
     </integer-array>
 
-    <!-- Is the device capable of hot swapping an UICC Card -->
+    <!-- SIM card hot swap -->
     <bool name="config_hotswapCapable">true</bool>
 
-    <!-- Screen brightness used to dim the screen while dozing in a very low power state. -->
+    <!-- Doze screen brightness -->
     <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.06667</item>
 
-    <!-- The restoring is handled by modem if it is true-->
+    <!-- Skip restoring network selection -->
     <bool name="skip_restoring_network_selection" translatable="false">true</bool>
 
-    <!-- MMS user agent string -->
+    <!-- MMS user agent -->
     <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
 
-    <!-- MMS user agent profile url -->
+    <!-- MMS profile URL -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
-    <!-- Whether a software navigation bar should be shown. -->
+    <!-- Navigation bar -->
     <bool name="config_showNavigationBar">true</bool>
 
-    <!-- ComponentName of a dream to show whenever the system would otherwise have gone to sleep. -->
+    <!-- Doze component -->
     <string name="config_dozeComponent" translatable="false">com.android.systemui/com.android.systemui.doze.DozeService</string>
 
-    <!-- If true, the doze component is not started until after the screen has been turned off. -->
+    <!-- Doze after screen off -->
     <bool name="config_dozeAfterScreenOffByDefault">false</bool>
 
+    <!-- Power decouple interactive mode -->
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
 
-    <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
+    <!-- Cell broadcast links -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
-    <!-- Maximum number of supported users -->
+    <!-- Multi-user settings -->
     <integer name="config_multiuserMaximumUsers">4</integer>
-
-    <!-- Whether UI for multi user should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 
-    <!-- Safe headphone volume index. -->
-    <integer name="config_safe_media_volume_index">100</integer>
+    <!-- Safe media volume index -->
+    <integer name="config_safe_media_volume_index">10</integer>
 
-    <!-- Configure tcp buffer sizes per network type -->
+    <!-- TCP buffer sizes -->
     <string-array name="config_network_type_tcp_buffers">
         <item>LTE:2097152,4194304,8388608,262144,524288,1048576</item>
         <item>LTE_CA:4096,6291456,12582912,4096,1048576,2097152</item>
@@ -436,66 +97,79 @@
         <item>EvDo_B:4094,87380,524288,4096,16384,262144</item>
     </string-array>
 
+    <!-- WiFi display protected buffers -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
+
+    <!-- Camera shutter sound -->
     <bool name="config_camera_sound_forced">false</bool>
+
+    <!-- Speed up audio on MT calls -->
     <bool name="config_speed_up_audio_on_mt_calls">true</bool>
 
-    <!-- Set to false for standard sRGB IPS LCD panel -->
+    <!-- Wide Color Gamut (Disabled for LCD) -->
     <bool name="config_enableWcgMode">false</bool>
 
+    <!-- STK alpha identifier confirmation -->
     <bool name="config_stkNoAlphaUsrCnf">false</bool>
+
+    <!-- Persistent data package -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
+
+    <!-- Optional package verifier -->
     <string name="config_optionalPackageVerifierName" translatable="false">seemp.service</string>
+
+    <!-- Telephony & VoLTE features -->
     <bool name="config_device_volte_available">true</bool>
     <bool name="config_carrier_volte_available">true</bool>
     <bool name="config_device_vt_available">true</bool>
     <bool name="config_device_wfc_ims_available">true</bool>
     <bool name="config_switch_phone_on_voice_reg_state_change">false</bool>
     <integer name="config_default_cellular_usage_setting">-1</integer>
+
+    <!-- Unprocessed audio support -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
 
-    <!-- Refresh rate brightness thresholds -->
+    <!-- Peak refresh rate thresholds -->
     <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
-        <item>10</item>
-        <item>14</item>
+        <item>10</item> <!-- 33% UI brightness -->
+        <item>14</item> <!-- 40% UI brightness -->
     </integer-array>
     <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
         <item>-1</item>
         <item>20</item>
     </integer-array>
 
+    <!-- Default refresh rate in zone -->
     <integer name="config_defaultRefreshRateInZone">0</integer>
-    <integer name="config_defaultRefreshRate">0</integer>
 
-    <!-- Peak refresh rate: Set to 144Hz for Redmi 15 4G display panel -->
-    <integer name="config_defaultPeakRefreshRate">144</integer>
+    <!-- Default refresh rate (144Hz) -->
+    <integer name="config_defaultRefreshRate">144</integer>
 
-    <!-- Refresh rate UI switches -->
-    <bool name="config_show_min_refresh_rate_switch">true</bool>
-    <bool name="config_show_peak_refresh_rate_switch">true</bool>
-    <bool name="config_show_smooth_display">true</bool>
-     
-    <!-- Haptics / Vibrator patterns -->
+    <!-- Vibrator patterns -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
         <item>1</item>
         <item>20</item>
         <item>21</item>
     </integer-array>
+
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
         <item>10</item>
         <item>20</item>
         <item>30</item>
     </integer-array>
+
     <integer-array name="config_clockTickVibePattern">
         <item>125</item>
         <item>30</item>
     </integer-array>
+
     <integer-array name="config_calendarDateVibePattern">
         <item>125</item>
         <item>30</item>
     </integer-array>
+
     <integer-array name="config_safeModeEnabledVibePattern">
         <item>0</item>
         <item>1</item>
@@ -504,6 +178,7 @@
         <item>500</item>
         <item>600</item>
     </integer-array>
+
     <integer-array name="config_scrollBarrierVibePattern">
         <item>0</item>
         <item>15</item>
@@ -511,33 +186,55 @@
         <item>10</item>
     </integer-array>
 
+    <!-- Default vibration intensities -->
     <integer name="config_defaultHapticFeedbackIntensity">3</integer>
     <integer name="config_defaultNotificationVibrationIntensity">3</integer>
     <integer name="config_defaultRingVibrationIntensity">3</integer>
 
+    <!-- Voice/data auto fallback -->
     <bool name="config_voice_data_sms_auto_fallback">true</bool>
+
+    <!-- IWLAN handover policies and services -->
     <bool name="config_enable_iwlan_handover_policy">false</bool>
     <string name="config_wlan_data_service_package" translatable="false">vendor.qti.iwlan</string>
     <string name="config_wlan_network_service_package" translatable="false">vendor.qti.iwlan</string>
     <string name="config_qualified_networks_service_package" translatable="false">vendor.qti.iwlan</string>
     <bool name="config_enhanced_iwlan_handover_check">false</bool>
+
+    <!-- Lineage Health Service -->
     <bool name="config_lineageHealthSupported">true</bool>
+
+    <!-- WiFi display support -->
     <bool name="config_enableWifiDisplay">true</bool>
 
-    <!-- Set to false for IPS LCD (burn-in protection is only for OLED/AMOLED) -->
+    <!-- Burn-in protection (Disabled for LCD) -->
     <bool name="config_enableBurnInProtection">false</bool>
 
+    <!-- Screen recorder AVC profile level -->
     <string name="config_screenRecorderAVCProfileLevel" translatable="false">4.2</string>
 
-    <!-- Safe and fast SQLite database configuration (prevents data corruption on crash) -->
-    <string name="db_default_journal_mode" translatable="false">WAL</string>
+    <!-- SQLite database journal and sync modes -->
+    <string name="db_default_journal_mode" translatable="false">TRUNCATE</string>
     <string name="db_default_sync_mode" translatable="false">NORMAL</string>
     <string name="db_wal_sync_mode" translatable="false">NORMAL</string>
 
+    <!-- Shell main thread -->
     <bool name="config_enableShellMainThread">true</bool>
+
+    <!-- Hardware limited alpha compositing -->
     <bool name="config_sf_limitedAlpha">true</bool>
+
+    <!-- Base configs for ActivityManager -->
+    <string-array name="configs_base">
+        <item>activity_manager/use_compaction=true</item>
+        <item>activity_manager/max_cached_processes=64</item>
+    </string-array>
+    
+    <!-- Auto power save modes -->
     <bool name="config_enableAutoPowerModes">true</bool>
-    <bool name="config_adaptive_sleep_available">true</bool>
+
+    <!-- Adaptive sleep (Disabled for SM6225) -->
+    <bool name="config_adaptive_sleep_available">false</bool>
 
     <!-- Set to true so UI drops heavy blur effects that lag the Adreno 610 GPU -->
     <bool name="config_sf_slowBlur">true</bool>
