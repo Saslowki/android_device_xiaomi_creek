@@ -128,7 +128,7 @@ ro.bluetooth.a2dp_offload.supported=true
 bluetooth.profile.asha.central.enabled=false
 
 # Camera
-camera.disable_zsl_mode=0
+camera.disable_zsl_mode=1
 sys.haptic.ignoreWhenCamera=true
 sys.haptic.unblockWhenCamera=true
 
@@ -234,7 +234,7 @@ ro.vendor.se.type=HCE,UICC
 ro.netflix.bsp_rev=Q6115-31409-1
 vendor.netflix.bsp_rev=Q6115-31409-1
 
-# Perf & Storage Optimization
+# Perf
 ro.vendor.beluga.p=0x3
 ro.vendor.beluga.c=0x4800
 ro.vendor.beluga.s=0x900
@@ -279,7 +279,7 @@ debug.sf.treat_170m_as_sRGB=1
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.enable_gl_backpressure=0
 
-# High FPS Phase Offsets (Calibrated for 144Hz panel)
+# Phase Offsets
 debug.sf.high_fps_early_gl_phase_offset_ns=-5000000
 debug.sf.high_fps_early_phase_offset_ns=-5000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000

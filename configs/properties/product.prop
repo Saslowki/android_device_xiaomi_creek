@@ -3,8 +3,6 @@ ro.launcher.blur.appLaunch=0
 
 # Audio
 af.fast_track_multiplier=1
-# Temporary bring-up routing workaround: media on deep-buffer/offload is
-# silent, while the primary low-latency PCM path is confirmed audible.
 audio.deep_buffer.media=false
 audio.offload.disable=1
 audio.offload.min.duration.secs=30
@@ -12,22 +10,10 @@ audio.sys.mute.latency.factor=2
 audio.sys.offload.pstimeout.secs=3
 ro.af.client_heap_size_kbyte=7168
 ro.config.safe_media_volume_index=10
-aaudio.hw_burst_min_usec=2000
-aaudio.mmap_exclusive_policy=2
 audio.offload.video=true
 audio.sys.noisy.broadcast.delay=500
 audio.sys.routing.latency=0
-ro.vendor.audio.ring.filter=false
-vendor.audio.flac.sw.decoder.24bit=true
-vendor.audio.hw.aac.encoder=true
-vendor.audio.offload.buffer.size.kb=32
-vendor.audio.offload.multiaac.enable=true
-vendor.audio.parser.ip.buffer.size=262144
-vendor.audio.tunnel.encode=false
-vendor.audio.use.sw.alac.decoder=true
-vendor.audio.use.sw.ape.decoder=true
-vendor.audio_hal.period_size=192
-vendor.voice.path.for.pcm.voip=true
+vendor.audio.hw.aac.encoder=false
 
 # Netflix
 ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
@@ -42,7 +28,7 @@ bluetooth.device_id.vendor_id=0x001D
 bluetooth.hfp.codec_aptx_voice.enabled=false
 bluetooth.hfp.swb.aptx.power_management.enabled=false
 bluetooth.profile.a2dp.source.enabled=true
-bluetooth.profile.asha.central.enabled=true
+bluetooth.profile.asha.central.enabled=false
 bluetooth.profile.avrcp.controller.enabled=false
 bluetooth.profile.avrcp.target.enabled=true
 bluetooth.profile.bap.broadcast.assist.enabled=false
@@ -66,7 +52,6 @@ bluetooth.profile.vcp.controller.enabled=false
 persist.vendor.bt.a2dp.samplerate=true
 
 # Display
-debug.sf.enable_gl_backpressure=0
 persist.vendor.adapt.sampler=true
 
 # Media
