@@ -10,7 +10,7 @@
         android:fillAfter="true"
         android:interpolator="@android:interpolator/linear"
         android:startOffset="0"
-        android:duration="320" />
+        android:duration="300" />
 
     <translate
         android:fromXDelta="0"
