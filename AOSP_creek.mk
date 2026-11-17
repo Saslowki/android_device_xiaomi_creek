@@ -27,7 +27,7 @@ WITH_EROFS := true
 # Basic identifiers
 PRODUCT_DEVICE            := creek
 PRODUCT_MANUFACTURER      := Xiaomi
-PRODUCT_BRAND             := Xiaomi
+PRODUCT_BRAND             := Redmi
 PRODUCT_MODEL             := Redmi 15 4G
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
