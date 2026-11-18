@@ -46,18 +46,6 @@ void load_redmi_creek() {
     property_override("vendor.usb.product_string", "Redmi 15");
 }
 
-void load_poco_creek() {
-    property_override("bluetooth.device.default_name", "POCO M7");
-    property_override("ro.product.brand", "Redmi");
-    property_override("ro.product.device", "creek_p");
-    property_override("ro.product.manufacturer", "Xiaomi");
-    property_override("ro.product.marketname", "POCO M7");
-    property_override("ro.product.model", "25062PC34G");
-    property_override("ro.product.mod_device", "creek_p_global");
-    property_override("ro.product.name", "creek_global");
-    property_override("vendor.usb.product_string", "POCO M7");
-}
-
 void vendor_load_properties() {
     std::string sku = GetProperty("ro.boot.product.hardware.sku", "");
     std::string hwname = GetProperty("ro.boot.hwname", "");
@@ -69,7 +57,6 @@ void vendor_load_properties() {
 
     if (access("/system/bin/recovery", F_OK) != 0) {
         if (hwname == "creek_p") {
-            load_poco_creek();
         } else {
             load_redmi_creek();
         }
