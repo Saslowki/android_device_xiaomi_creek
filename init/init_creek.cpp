@@ -48,7 +48,6 @@ void load_redmi_creek() {
 
 void vendor_load_properties() {
     std::string sku = GetProperty("ro.boot.product.hardware.sku", "");
-    std::string hwname = GetProperty("ro.boot.hwname", "");
 
     // If bootloader didn't supply an SKU, set a safe default for ODM import
     if (sku.empty()) {
@@ -56,10 +55,8 @@ void vendor_load_properties() {
     }
 
     if (access("/system/bin/recovery", F_OK) != 0) {
-        if (hwname == "creek_p") {
-        } else {
-            load_redmi_creek();
-        }
+        // Load unified Redmi 15 properties for all creek variants
+        load_redmi_creek();
 
         // Override first api level for Play Integrity if needed
         property_override("ro.product.first_api_level", "33");
